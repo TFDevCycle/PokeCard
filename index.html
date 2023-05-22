@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokémon Card Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h1 class="navbar-logo">Pokémon Card Browser</h1>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a card">
+        <button id="filterButton">Filter</button>
+        <div id="filterMenu">
+          <label>
+            <input type="checkbox" name="filterType" value="type"> Type
+          </label>
+          <label>
+            <input type="checkbox" name="filterRarity" value="rarity"> Rarity
+          </label>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card-list-container">
+    <div id="cardList"></div>
+    <div id="pagination"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
